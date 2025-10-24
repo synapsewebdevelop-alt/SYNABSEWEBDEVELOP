@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SYNAPSE</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="website icon" href="{% static 'images/Icon-1.jpg' %}"/>
+    <script defer src="{% static 'script/index.js' %}"></script>
+  </head>
+  <body style="width: 100%">
+    
+    <header style="width: 100%;height:100%;position:sticky;top:0;z-index:1000" class="bg-white  mt-5 mb-5 align-items-center my-auto" >
+      <div class="row">
+        <div class="col-md-5 col-7 d-flex">
+          <div class="ml-3">
+            <img
+              src="{% static 'images/Icon-2.jpg' %}"
+              style="width: 60px; height: 60px"
+              alt=""
+            />
+          </div>
+          <div class="p-2">
+            <h2 style="font-weight: light; color: rgb(45, 94, 253)">SYNAPSE</h2>
+          </div>
+        </div>
+        <div class="col-md-7 col-5 ml-auto mx-auto">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid mr-2">
+      
+              <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ml-auto">
+                  <li class="nav-item" id="nav-items"><a class="nav-link" href="#home">Home</a></li>
+                  <li class="nav-item" id="nav-items"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item" id="nav-items"id="nav-items"><a class="nav-link" href="#services">Services</a></li>
+                  <li class="nav-item" id="nav-items"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section style="width: 100%;" id="home" class="mb-5 p-2 my-auto">
+      <div class="container-fluid" style="width: 100%">
+        <div class="row my-auto p-3" style="width: 100%">
+          <div class="col-lg-7 col-md-5 col-12 mx-auto col-sm-6 my-auto">
+            <h3
+              class="text-center mt-3 pt-4"
+              style="font-size: 1.8rem; width: 100%"
+            >
+              Where Innovation Meets Design.
+            </h3>
+            <p class="lead text-center fs-md fs-sm fs-lg m-auto pt-3 pb-0 mb-0" style="font-size: larger;">
+              At Synapse, we transform ideas into visually stunning digital
+              experiences. By blending cutting-edge technology with sleek,
+              user-centered design, we craft websites that don’t just look
+              amazing—they perform flawlessly. Innovation is our blueprint,
+              design is our signature, and your vision is our mission.
+            </p>
+            <div class="text-center mx-auto pb-3 mt-0 pt-0 p-3 ">
+              <a href="#contact"><button style="font-size: 1.1rem" id="btn-1" class="mt-5  p-2">
+                Get Started
+              </button>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 col-md-7 col-sm-6 p-2 pt-0 text-center mx-auto pl-2 col-12"
+          >
+            <img src="{% static 'images/img-1.jpg' %}" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="mt-3">
+      <div class="container-fluid bg-light" id="about">
+        <div class="text-center mx-auto p-5 pt-4">
+            <h3 class="text-center mx-auto p-1 pt-5 mb-0">ABOUT US!</h3>
+          </div>
+        <div class="row bg-light m-2 mb-5 pb-5" id="about">
+          
+          <div class="col-md-6 col-12 mx-auto text-center">
+            <div class="text-center mx-auto m-auto p-3 m-2">
+              <img src="{% static 'images/img-2.jpg' %}" alt="" class="img-fluid imga text-center mx-auto pt-0 mt-0 " />
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-12 my-auto pl-5 pr-5 text-center p-5">
+            <p style="font-size: larger;">At Synapse, we transform ideas into digital reality. We are a passionate team of developers and designers dedicated to building smart, scalable, and stunning websites.</p>
+            <h6 style="font-size: larger;"class="p-3" >Our Mission</h6>
+            <p style="font-size: larger;">To empower businesses with cutting-edge websites that don’t just look amazing but also perform flawlessly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services"  class="mt-4 pt-1">
+      <div class="container-fluid">
+        <h1 class="text-center mx-auto pb-5 mt-5 pt-5" id="headings">Services</h1>
+        <div class="row">
+          <div class="col-md-6 col-12 my-auto mx-auto text-center p-5">
+            <h3 class="p-2">Web Development</h3>
+            <p style="font-size: larger;">
+              We create websites that are fast, clean, and easy to use — built with care from the first line of code to the final pixel. Whether it’s a sleek landing page or a full-blown platform, We focus on making things look sharp and run smooth across all devices.
+            </p>
+          </div>
+          <div class="col-md-6 col-12 mx-auto text-center mb-3">
+            <img src="{% static 'images/img-3.jpg' %}" alt="" class="img-fluid" style="width:25rem;height:25rem;" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light" id="testimonials">
+      <div class="container-fluid my-5">
+        <h1 class="text-center mb-4 pt-5">Testimonials</h1>
+        <div class="row g-4 mt-5">
+          <div class="col-md-4 col-12 pb-5 ">
+            <div class="card h-100 shadow-sm" id="carda">
+            <img src="{% static 'images/img-4.png' %}" class="img-fluid mx-auto p-3 " style="width:10rem;height:10rem;" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center p-3">USER 1</h5>
+                <p class="card-text mx-auto text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis modi doloribus sapiente facilis</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 pb-5">
+            <div class="card h-100 shadow-sm" id="carda">
+              <img src="{% static 'images/img-4.png' %}" class="img-fluid mx-auto  p-3" style="width:10rem;height:10rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center p-3">USER 2</h5>
+                <p class="card-text mx-auto text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis modi doloribus sapiente facilis</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4  col-12 pb-5">
+            <div class="card h-100 shadow-sm" id="carda">
+              <img src="{% static 'images/img-4.png' %}" class="img-fluid circle-rounded mx-auto  p-3" style="width:10rem;height:10rem;" alt="...">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center p-3">USER 3</h5>
+                <p class="card-text mx-auto text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis modi doloribus sapiente facilis</p>
+              
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container-fluid mx-auto text-center" id="contact">
+        <h1 class="pt-3 mt-5">Contact Us!</h1>
+        <div class="row mx-auto text-center p-5 ">
+          <form action="" method="POST" class="text-center mx-auto p-5" style="width: 100%; max-width: 600px" id="myForm" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-row">
+              <div class="form-group col-md-6 col-12" style="width: 100%">
+                <label for="" class="p-2">Full Name</label>
+                <input type="text" name="FullName" class="form-control" id="inputName" required>
+              </div>
+              <div class="form-group col-md-6 col-12">
+                <label for="inputPassword4" class="p-2">Email</label>
+                <input type="email" name="Email" class="form-control" id="inputEmail" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress" class="p-2">Contact No</label>
+              <input type="text" name="ContactNo" class="form-control" id="inputPhone" placeholder="Country code + Number" required>
+              <p class="p-2 pt-3" style="color:rgb(156, 156, 156)">Ex. India: +91 XXXXXXXXXX</p>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress" class="p-2">Describe Your Project</label>
+              <input type="text" name="AboutProject" class="form-control" id="inputProject" placeholder="Tell Us About Your Project" required>
+              
+            </div>
+            
+            
+            <button type="submit" style="width:100%" class=" btn-2 btn btn-primary mt-3" id="submitBtn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section style="width:100%">
+    <footer style="background-color: rgb(192, 192, 192);">
+      <div class="container-fluid ">
+        <div style="display:flex;flex-wrap: nowrap;align-items: center;justify-content: center;" class="text-center mx-auto p-3 pt-4">
+          <img src="{% static 'images/Icon-2.jpg' %}" style="width:40px;height:40px;border:1px solid rgb(37, 37, 37);" class="rounded-circle m-2" alt="">
+          <h3 class="m-2" style="color:rgb(56, 55, 55);">Synapse</h3>
+          
+        </div>
+        <div style="max-width: 800px;" class="text-center mx-auto p-3 pt-0 mt-0">
+          <p class="text-center" >Synapse is a creative web development company that blends innovation and design to build modern, responsive, and user-focused websites</p>
+        </div>
+        <div class="social text-center mx-auto p-3 pt-0 mt-0">
+          <a href="https://www.facebook.com/share/15X7KLAKTK/"><img src="{% static 'images/facebook.png' %}" alt="" class="m-2 sb" id="sl" style="width:40px;height:40px;"></a>
+          <a href="https://www.instagram.com/synapse.webdevelop?igsh=cGRocGlwaWZwcTEx"><img src="{% static 'images/instagram.png' %}" alt="" class="m-2 sb" id="sl" style="width:40px;height:40px;"></a>
+          <a href="https://x.com/ConnectSynapse?t=YbTvv8B2MCzc-vute1uODA&s=09"><img src="{% static 'images/twitter.png' %}" alt="" class="m-2 sb" id="sl" style="width:40px;height:40px;"></a>
+          <a href="https://www.linkedin.com/in/synapse-webdevelop-387709381/"><img src="{% static 'images/linkedin.png' %}" alt="" class="m-2sb " id="sl" style="width:40px;height:40px;"></a>
+        </div>
+        
+        
+        <div class="row" style="width: 100%;">
+          <div class=" text-center mx-auto">
+            <p class="text-center p-3 pt-0 mt-0" style="color:rgb(56, 55, 55);">© 2025 Synapse. All rights reserved.</p>
+          </div>
+          <div class=" text-center mx-auto">
+            <p class="text-center p-3 pt-0 mt-0" style="color:rgb(56, 55, 55);">Designed by Synapse Team</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const navbar = document.querySelector('.navbar-collapse');
+
+    // Function to close navbar
+    function closeNavbar() {
+      if (navbar.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbar, { toggle: true });
+        bsCollapse.hide();
+      }
+    }
+
+    // 1. Close when nav-link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', closeNavbar);
+    });
+
+    // 2. Close when clicking outside
+    document.addEventListener('click', function(event) {
+      const isClickInside = navbar.contains(event.target) || event.target.closest('.navbar-toggler');
+      if (!isClickInside) {
+        closeNavbar();
+      }
+    });
+  </script>
+
+    
+    <button  class="mr-3" title='Scroll To Top' id="scrollToTopBtn" style="padding:0;border-radius: 0.8rem;background-color: white;"><a href="#home"><img style="width:2.5rem;height:2.5rem;margin:0;" src="{% static 'images/scrollTop.png' %}"></a></button>
+  </body>
+</html>

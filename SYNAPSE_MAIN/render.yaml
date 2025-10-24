@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: synapse-web
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn SYNAPSE_MAIN.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: SYNAPSE_MAIN.settings
+      - key: SECRET_KEY
+        value: 'django-insecure-z=7t@jj%qj3$q)ubea_vliww2o&ox#*bw!kqcso2uc$)r7%a-0'
+      - key: DATABASE_URL
+        value: sqlite:///db.sqlite3
