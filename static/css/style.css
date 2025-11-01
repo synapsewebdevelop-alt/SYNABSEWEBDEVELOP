@@ -1,0 +1,111 @@
+html{
+    offset:50;
+}
+*{
+  offset: 50;
+}
+#btn-1{
+    border-radius: 1.3rem;
+    border:none;
+    padding:20px;
+    background:linear-gradient(45deg, #5a80ff, #ba53ff);
+    color:white;    
+    transition: background 0.5s ease-in-out,transform 0.7s ease-in-out;
+    width:10rem;
+    box-shadow: 0 0 10px #ff00ff,0 0 20px #00ffff;
+}
+#btn-1:hover{
+    background:linear-gradient(45deg, #ba53ff, #5a80ff);
+    color:white;
+    transform:scale(1.1);box-shadow: 0 0 20px #ff00ff,0 0 30px #00ffff;
+
+
+}
+#nav-items{
+    font-weight:600;
+    font-size:1.1rem;
+    margin-right:1rem;
+    
+}
+
+#nav-items{
+  display: inline-block;
+  position: relative;
+}
+#nav-items::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#nav-items:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar-collapse {
+  transition: height 0.8s ease-in-out; /* Adjust duration and timing function as desired */
+  overflow: hidden; /* Prevents content from overflowing during the transition */
+}
+#about{
+  width:100%;
+  background:linear-gradient(45deg,blue pink violet)
+}
+#carda{
+  border-radius:1.5rem;
+  transform-origin: center;
+  transform: scale(1);
+}
+#carda:hover{
+  transform:scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor:pointer;
+  box-shadow: 0 0 20px grey;
+}
+#sl{
+  border-radius:1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+#sl:hover{
+  transform:scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor:pointer
+}
+#topbtn{
+  position:sticky;
+  z-index:10000;
+}
+#scrollToTopBtn {
+    display:none;/* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333; /* Darker background on hover */
+}
+.btn-2{
+  box-shadow: 0 0 5px rgb(0, 119, 255)
+}
+.btn-2:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.918);
+} 
+.imga{
+  box-shadow: 0 0 10px grey ;
+}
